@@ -1,0 +1,247 @@
+.titulo1{
+    position: absolute;
+    height: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 60px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 35px;
+    /* or 58% */
+
+    color: #FFFFFF;
+
+}
+
+.label1{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 590px;
+    top: 149px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: white;
+
+}
+
+.label2{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 590px;
+    top: 249px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: white;
+
+}
+
+.label3{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 590px;
+    top: 349px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: white;
+
+}
+
+.label4{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 590px;
+    top: 449px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: white;
+
+}
+
+.label5{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 590px;
+    top: 549px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: white;
+
+}
+
+.input1{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 170px;
+    font-size: 17px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.input2{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 270px;
+    font-size: 17px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.input3{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 370px;
+    font-size: 17px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.input4{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 470px;
+    font-size: 17px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.input5{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 570px;
+    font-size: 17px;
+
+    background: #7FF162;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.btncadastrar{
+    position: absolute;
+    top: 642px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.sair{
+    position: absolute;
+    top: 640px;
+    left: 55%;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.retangulo1{
+    position: absolute;
+    width: 528px;
+    height: 616px;
+    left: 50%;
+    top: 55px;
+
+    background: #6962F1;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 37px;
+    transform: translate(-50%,0);
+}
+
+.vector1{
+    position: absolute;
+    width: 548px;
+    height: 269px;
+    left: -365px;
+    top: 290px;
+
+    border: none;
+    background: url(/static/img/vector2cadastraraluno.png);
+}
+
+.aviao1{
+    position: absolute;
+    width: 127px;
+    height: 95px;
+    left: 160px;
+    top: 417px;
+
+    background: url(/static/img/aviao1cadastraraluno.png);
+}
+
+.aviao2{
+    position: absolute;
+    width: 217px;
+    height: 161px;
+    left: 1259px;
+    top: 107px;
+
+    background: url(/static/img/aviao2cadastroaluno.png);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}

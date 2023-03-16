@@ -1,0 +1,183 @@
+.retangulo1{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%,0);
+    background: #FF5C7F;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 37px;
+}
+
+.texto1{
+    position: absolute;
+    width: 171px;
+    height: 83px;
+    left: 50%;
+    top: 76px;
+    transform: translate(-50%,0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800px;
+    font-size: 40px;
+    line-height: 82px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.email{
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    left: 50%;
+    top: 189px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    border: none;
+
+    color: #FFFFFF;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.retangulo2{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 50%;
+    top: 214px;
+    transform: translate(-50%,0);
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: small;
+    text-align: center;
+    border: none;
+}
+
+.senha{
+    position: absolute;
+    width: 52px;
+    height: 23px;
+    left: 50%;
+    top: 257px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+    transform: translate(-50%,0);
+    text-align: center;
+}
+
+.retangulo3{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 50%;
+    top: 280px;
+    transform: translate(-50%,0);
+    background: #7FF162;
+    border-radius: 15px;
+    font-size: large;
+    border: none;
+    text-align: center;
+}
+
+.entrar{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    top: 430px;
+    transform: translate(-50%,0);
+    background: #6962F1;
+    border-radius: 15px;
+
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 0px;
+    /* identical to box height */
+    text-decoration: none;
+
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entrar:hover{
+    background-color: #7FF162;
+    cursor: pointer;
+}
+
+.vetor1{
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 300px;
+    height: 755px;
+    left: 0px;
+    top: 0px;
+
+    background-image: url(/static/img/Vector\ 3.png);
+}
+
+.aviao1{
+    position: absolute;
+    width: 140.04px;
+    height: 120.26px;
+    left: 1073.39px;
+    top: 1px;
+
+    background: url(/static/img/aviao\ 3.png);
+    transform: matrix(-0.65, 0.76, 0.76, 0.65, 0, 0);
+}
+
+.aviao2{
+    position: absolute;
+    width: 215px;
+    height: 161px;
+    left: 1182px;
+    top: 519px;
+
+    background: url(/static/img/aviao\ 2.png);
+    transform: matrix(-1, 0, 0, 1, 0, -1);
+}
+
+.eclipse1{
+    position: absolute;
+    width: 100px;
+    height: 45px;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 500px;
+    border-radius: 20px;
+    background: #FF5C7F;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    /* identical to box height */
+    text-decoration: none;
+
+    color: #3C3C3C;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}

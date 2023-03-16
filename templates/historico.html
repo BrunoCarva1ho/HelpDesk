@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/historico.css">
+    <title>histórico</title>
+</head>
+<body>
+    {% if id == "1" %}
+        <p>Administrador</p>
+    {%endif%}
+    <p>id Usuário logado: {{id}}</p>
+
+    <div class="eclipse2"></div>
+    <h1 class="titulo">Histórico Pessoal</h1>
+    <h1 class="subtitulo">Aqui você consegue visualizar o seu historico!</h1>
+    
+    <table class="table">
+        <tr class="th">
+            <td class="tdth">Intensidade</td>
+            <td class="tdth">Frequência</td>
+            <td class="tdrelato">Descrição</td>
+            <td class="tdth">idRelato</td>
+            <td class="tdth">idAutor</td>
+            
+        </tr>
+
+        {% for relato in geral %}
+            <tr class="retangulo1">
+                <td class="tr">{{relato.0}}</td>
+                <td class="tr">{{relato.1}}</td>
+                <td class="tdrelato">{{relato.2}}</td>
+                <td class="td1">{{relato.4}}</td>
+                <td class="td1">{{id}}</td>
+                <td class="td2"><a href="/excluir_historico/{{relato.4}}/{{id}}" class="lixeira"></a></td>
+ 
+            </tr>
+        {%endfor%}
+    </table>
+
+    {% if id != "1" %}
+        <a href="/novorelato.html/{{id}}" class="criarrelato">novo relato</a>
+    {%endif%}
+
+    <a href="/relatos.html/{{id}}" class="sair">voltar</a>
+    <br><br>
+    
+</body>
+</html>

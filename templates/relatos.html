@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/relatos.css">
+    <title>Document</title>
+</head>
+<body>
+    {% if id == 1 %}
+        <p>Tipo de Usuário logado: Administrador</p>
+    {%endif%}
+
+    {% if id%2 == 0 %}
+        <p>Tipo de Usuário logado: Professor</p>
+    {% endif %}
+
+    {% if id%2 != 0 and id != 1%}
+        <p>Tipo de Usuário logado: Aluno</p>
+    {% endif %}
+
+    <p>id: {{id}}</p>
+
+    <img src="../static/graf/pizza.png" alt="" class="grafico">
+
+    <a href="/atualizar_grafico/{{id}}" class="atualizar_grafico">atualizar gráfico</a>
+
+    {% if id%2 != 0 %}
+        <div class="imagemaluno"></div>
+    {% endif %}
+
+    {% if id%2 == 0 and id != 1 %}
+        <div class="imagemprofessor"></div>
+    {% endif %}
+
+    <h1 class="titulo">Relatos</h1>
+    <h1 class="subtitulo">Aqui você consegue visualizar os relatos!</h1>
+    
+    <form action="/filtro.html/{{id}}" method="get">
+        <select name="intensidade" id="" class="filtro1">
+            <option value="">Intensidade</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="frequencia" id="" class="filtro2">
+            <option value="">Frequência</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <button type="submit" class="botaofiltro">filtrar</button>
+    </form>
+
+    
+    <table class="table">
+        <tr class="th">
+            <td class="tdth">Intensidade</td>
+            <td class="tdth">Frequência</td>
+            <td class="tdrelato">Descrição</td>
+            <td class="tdth">id</td>
+            
+        </tr>
+
+        {% for relato in geral %}
+            <tr class="retangulo1">
+                <td class="tr">{{relato.0}}</td>
+                <td class="tr">{{relato.1}}</td>
+                <td class="tdrelato">{{relato.2}}</td>
+                <td class="td1">{{relato.4}}</td>
+                    {% if id == 1 %}
+                        <td class="td2"><a href="/excluir/{{relato.4}}/{{id}}" class="lixeira"></a></td>
+                    {%endif%}
+            </tr>
+        {%endfor%}
+    </table>
+
+    {% if id != 1 and ( id%2 ) != 0 %}
+        <a href="/novorelato.html/{{id}}" class="criarrelato">novo relato</a>
+        <a href="/historico.html/{{id}}" class="historico" >meus relatos</a>
+    {%endif%}
+
+    <a href="/" class="sair">sair</a>
+    <br><br>
+    
+</body>
+</html>

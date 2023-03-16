@@ -1,0 +1,157 @@
+.header1{
+    position: absolute;
+    width: 360px;
+    height: 90px;
+    left: 111px;
+    top: 40px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 60px;
+    line-height: 90px;
+    /* identical to box height */
+
+
+    color: #3C3C3C;
+
+}
+
+.label1{
+    position: absolute;
+    width: 301px;
+    height: 39px;
+    left: 111px;
+    top: 200px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: #3C3C3C;
+}
+
+.input1{
+    position: absolute;
+    width: 1300px;
+    height: 80px;
+    left: 111px;
+    top: 250px;
+    border: none;
+    background: #6962F1;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.3;
+}
+
+
+.label2{
+    position: absolute;
+    width: 175px;
+    height: 39px;
+    left: 111px;
+    top: 358px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: #3C3C3C;
+}
+
+.input2{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 111px;
+    top: 400px;
+    border: none;
+    background: #6962F1;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.label3{
+    position: absolute;
+    width: 165px;
+    height: 39px;
+    left: 613px;
+    top: 358px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: #3C3C3C;
+}
+
+.input3{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 613px;
+    top: 400px;
+    border: none;
+    background: #6962F1;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.concluir{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 250px;
+    height: 59px;
+    left: 111px;
+    top: 500px;
+
+    background: #7FF162;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-size: 25px;
+    border: none;
+}
+
+.concluir:hover{
+    background-color: #4f764c;
+    cursor: pointer;
+}
+
+.sair{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 1270px;
+    top: 500px;
+
+    border-radius: 15px;
+    background: #FF5C7F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height */
+
+
+    color:white;
+}

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/novorelato.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>id Usuário logado: {{id}}</p>
+    <h3 class="header1">Seu relato</h3>
+
+    <form action="/novorelato.html/{{id}}" method="post">
+        <label for="relato" class="label1">Relate seu problema</label>
+        <input type="text" class="input1" name="relato" placeholder="Digite seu problema aqui...">
+
+        <label for="intensidade" class="label2">Intensidade</label>
+        <input type="number" class="input2" name="intensidade">
+
+        <label for="frequencia" class="label3">Frequencia</label>
+        <input type="number" class="input3" name="frequencia">
+
+        <button type="submit" class="concluir">Publicar Relato</button>
+    </form>
+
+    <a href="/relatos.html/{{id}}" class="sair">voltar</a>
+</body>
+</html>

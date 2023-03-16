@@ -1,0 +1,232 @@
+.titulo{
+    position: absolute;
+    height: 90px;
+    left: 111px;
+    top: 63px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 90px;
+    /* identical to box height */
+
+
+    color: #3C3C3C;
+}
+
+.subtitulo{
+    position: absolute;
+    width: 824px;
+    height: 84px;
+    left: 111px;
+    top: 190px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+
+    color: #3C3C3C;
+}
+
+.filtro1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 111px;
+    top: 250px;
+
+    background: #B9B9B9;
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+
+    text-align: center;
+
+    color: #3C3C3C;
+
+}
+
+.filtro1:hover{
+    cursor: pointer;
+}
+
+.filtro2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 325px;
+    top: 250px;
+
+    background: #B9B9B9;
+    border-radius: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical to box height, or 144% */
+
+    text-align: center;
+
+    color: #3C3C3C;
+}
+
+.filtro2:hover{
+    cursor: pointer;
+}
+
+.botaofiltro{
+    position: absolute;
+    left: 537px;
+    top: 263px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #B9B9B9;
+}
+
+.botaofiltro:hover{
+    cursor: pointer;
+}
+
+.eclipse2{
+    position: absolute;
+    width: 91px;
+    height: 91px;
+    left: 1270px;
+    top: 75px;
+
+    background: url(/static/img/Ellipse\ 2.png);
+}
+
+.retangulo1{
+    position: relative;
+    background: #6962F1;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 50px;
+
+    color: #FFFFFF;
+    overflow-y: auto;
+    
+}
+
+.lixeira{
+    border-radius: 5px;
+    position:absolute;
+    top: 22px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    background: url(/static/img/image\ 1.png);
+}
+
+.lixeira:hover{
+    background-color: red;
+}
+
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 92px;
+    top: 350px;
+    width: 90%;
+    
+    border-spacing: 20px;
+}
+
+.tr{
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px;
+}
+
+.td1{
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+}
+.td2{
+    background-color: white;
+}
+.tdrelato{
+    width: 850px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.th{
+    border-radius: 10px;
+    background-color: #B9B9B9;
+    color: #3C3C3C;
+    font-size: 23px;
+    text-align: center;
+}
+.tdth{
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.sair{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 1270px;
+    top: 250px;
+
+    border-radius: 15px;
+    background: #FF5C7F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height */
+
+
+    color:white;
+}
+
+.sair:hover{
+    background-color: #b92242;
+}
+
+.criarrelato{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 266.67px;
+    height: 39.33px;
+    left: 974px;
+    top: 250px;
+
+    background: #7FF162;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-decoration:none;
+}
+
+.criarrelato:hover{
+    background-color: #215d1a;
+}
