@@ -5,16 +5,6 @@ from flask_login import LoginManager, login_user, logout_user, current_user, log
 
 app = Flask(__name__)
 
-# login_manager = LoginManager()
-# login_manager.init_app(app)
-
-# class User(UserMixin):
-#     def __init__(self, id):
-#         self.id = id
-        
-#     def get(user_id):
-#         return User(user_id)
-
 
 @app.route('/')
 def index():
@@ -38,19 +28,12 @@ def entrar():
                 #Procura os dados de email e senha no banco aluno
                 cur.execute('SELECT idAluno FROM aluno WHERE email=%s AND senha=%s', (email,senha) )
                 id = cur.fetchall()
-            # else:
-            #     user = User.authenticate(email,senha)
-            #     login_user(user)
-            #     return render_template('relatos.html',geral=geral,id=id)
-                
+  
             #Se o id não foi preenchido
             if id == ():            
                 #Procura os dados de email e senha no banco professor
                 cur.execute('SELECT idProfessor FROM professor WHERE email=%s AND senha=%s', (email,senha) )
                 id = cur.fetchall()
-            # else:
-            #     user = User.authenticate(email,senha)
-            #     login_user(user)
             
             #Se o id foi preenchido
             if id != ():    
@@ -66,13 +49,6 @@ def entrar():
 
     #Usuário e senha não encontrados retorna para a mesma pagina
     return render_template('entrar.html')
-
-
-# @app.route('/sair')
-# @login_required
-# def sair():
-#     logout_user()
-#     return redirect('/')
 
 
 @app.route('/cadastraraluno.html', methods =['get','POST'])
