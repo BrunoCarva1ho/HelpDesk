@@ -245,3 +245,19 @@
     background: url(/static/img/aviao2cadastroaluno.png);
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+.aviso{
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-50%,0);
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+
+    color: #3C3C3C;
+}

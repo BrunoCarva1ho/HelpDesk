@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,16 +9,19 @@
     <title>Document</title>
 </head>
 <body>
+    
     {% if id == 1 %}
         <p>Tipo de Usuário logado: Administrador</p>
     {%endif%}
 
     {% if id%2 == 0 %}
         <p>Tipo de Usuário logado: Professor</p>
+        <div class="imagemprofessor"></div>
     {% endif %}
 
     {% if id%2 != 0 and id != 1%}
         <p>Tipo de Usuário logado: Aluno</p>
+        <div class="imagemaluno"></div>
     {% endif %}
 
     <p>id: {{id}}</p>
@@ -28,14 +29,6 @@
     <img src="../static/graf/pizza.png" alt="" class="grafico">
 
     <a href="/atualizar_grafico/{{id}}" class="atualizar_grafico">atualizar gráfico</a>
-
-    {% if id%2 != 0 %}
-        <div class="imagemaluno"></div>
-    {% endif %}
-
-    {% if id%2 == 0 and id != 1 %}
-        <div class="imagemprofessor"></div>
-    {% endif %}
 
     <h1 class="titulo">Relatos</h1>
     <h1 class="subtitulo">Aqui você consegue visualizar os relatos!</h1>
@@ -68,7 +61,6 @@
             <td class="tdth">Intensidade</td>
             <td class="tdth">Frequência</td>
             <td class="tdrelato">Descrição</td>
-            <td class="tdth">id</td>
             
         </tr>
 
@@ -77,9 +69,8 @@
                 <td class="tr">{{relato.0}}</td>
                 <td class="tr">{{relato.1}}</td>
                 <td class="tdrelato">{{relato.2}}</td>
-                <td class="td1">{{relato.4}}</td>
                     {% if id == 1 %}
-                        <td class="td2"><a href="/excluir/{{relato.4}}/{{id}}" class="lixeira"></a></td>
+                        <td class="td2"><a href="/excluir/{{relato.3}}/{{id}}" class="lixeira"></a></td>
                     {%endif%}
             </tr>
         {%endfor%}

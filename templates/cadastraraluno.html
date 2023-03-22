@@ -12,6 +12,19 @@
     <div class="aviao1"></div>
     <div class="aviao2"></div>
     <div class="vector1"></div>
+    
+    {% block conteudo %}
+
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div class="aviso">
+                {% for msg in mensagens%}
+                {{ msg }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    
+    {% endblock %}
 
     <h1 class="titulo1">CADASTRO ALUNO</h1>
 
@@ -20,7 +33,13 @@
         <input type="text" name="nome" id="" class="input1">
 
         <label for="curso" class="label2">Curso</label>
-        <input type="text" name="curso" id="" class="input2">
+        <select name="curso" id="" class="input2">
+            <option value="">selecione o curso</option>
+            <option value="Sistemas de Informacao">Sistemas de Informação</option>
+            <option value="Engenharia de Producao">Engenharia de Produção</option>
+            <option value="Engenharia Eletrica">Engenharia Elétrica</option>
+            <option value="Engenharia de Computacao">Engenharia de Computação</option>
+        </select>
 
         <label for="email" class="label3">Email</label>
         <input type="text" name="email" id="" class="input3">

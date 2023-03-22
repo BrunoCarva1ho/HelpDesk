@@ -12,6 +12,20 @@
     <div class="aviao1"></div>
     <div class="aviao2"></div>
     <div class="retangulo1"></div>
+
+    {% block conteudo %}
+
+        {% set mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+            <div class="aviso">
+                {% for msg in mensagens%}
+                {{ msg }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    
+    {% endblock %}
+    
     <h1 class="texto1">LOGIN</h1>
 
     <form action="/entrar.html" method="post">
