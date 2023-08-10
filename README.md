@@ -1,2 +1,2 @@
 # HelpDesk
-Site Acadêmico de reclamações, Python(Flask), Mysql, HTML, CSS, Figma
+Site Acadêmico de reclamações, Python(Flask,Matplotlib,...), Mysql, HTML, CSS, Figma
