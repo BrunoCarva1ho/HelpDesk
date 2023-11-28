@@ -5,4 +5,4 @@ Site Acadêmico de reclamações, Python(Flask,Matplotlib,...), Mysql, HTML, CSS
 
 <b> Todas as operações Create, Read, Update e Delete estão contidas no arquivo "app.py"<b>
 
-<b> A função criada para gerar o gráfico está no arquivo graph.py <b>
+<b> A função criada para gerar o gráfico está no arquivo graf.py <b>
